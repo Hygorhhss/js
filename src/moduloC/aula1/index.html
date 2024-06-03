@@ -10,10 +10,11 @@
     <h1>DOM</h1> 
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
 
     <script>
-
+        var a = window.document.querySelector ('div#msg')
+        a.style.color = 'green'
     </script>
 </body>
 </html>
