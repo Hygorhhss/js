@@ -6,21 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <h1>Qual sua nacionalidade?</h1>
+    <h1>Qual seu pais de origem</h1>
 
-    Me informe sua nacionalidade <input type="text" id="nac">
-    <input type="button" value="verificar" onclick="nacionalidade()">
+    Informe seu pais <input type="text" id="nac">
+    <input type="button" value="pais" onclick="nacional()">
     <div id="res"></div>
 
     <script>
-        function nacionalidade() {
-            var nac = document.getElementById('nac');
-            var res = document.getElementById('res');
-            if (nac.value.toLowerCase() === 'brasil') {
-                res.innerHTML = 'Você é brasileiro';
+        function nacional() {
+            var nac = document.getElementById('nac')
+            var res = document.getElementById('res')
+            if (nac.value == 'Brasil') {
+                res.innerText = 'Você é Brasileiro'
             } else {
-                res.innerHTML = 'Você é estrangeiro';
+                res.innerText =  'Você é estrangeiro'
             }
         }
     </script>
